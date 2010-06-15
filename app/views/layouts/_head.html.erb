@@ -1,0 +1,20 @@
+<head>
+  <title><%= @page_title %></title>
+  <meta name="description" content="<%=h @page_meta_description %>"/>
+  <meta name="keywords" content="<%=h @page_meta_keywords %>"/>
+
+  <meta name="robots" content="index,follow"/>
+  <meta name="robots" content="all"/>
+  <meta http-equiv="copyright" content="St, Paul Group LLC 2010"/>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+  <meta http-equiv="content-language" content="en-us"/>
+
+  <%= stylesheet_link_tag "blueprint/screen", :media => "screen, projection" %>
+  <%= stylesheet_link_tag "blueprint/print",  :media => "print" %>
+  <!--[if lt IE 8]>
+      <%= stylesheet_link_tag "blueprint/ie", :media => "screen, projection" %>
+  <![endif]-->
+  <%= stylesheet_link_tag "blueprint/plugins/buttons/screen", :media=>"screen, projection" %>
+  <%= stylesheet_link_tag "spg"%>
+
+</head>
