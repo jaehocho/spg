@@ -1,5 +1,13 @@
-body {font-family:Georgia,Arial,Helvetica,sans-serif; font-size:11px; background-color: #dddddd}
-.main_content {background-color: #ffffff}
-.header .logo { padding: 2em }
+body {font-family:Georgia,Arial,Helvetica,sans-serif; font-size:12px; background-color: #dfdfdf}
+.main_content {background-color: #ffffff; padding: 1.5em}
+.header { padding: 1em 0 1em 0}
+.header .logo { padding-bottom: 1.5em }
 .footer { padding-top: 1em}
 .footer a { margin: 1em 1em 1em 1em }
+
+
+.left_nav ul { padding: 0; list-style: none; }
+.left_nav ul li { padding: .3em 0 .3em 0 }
+
+
+

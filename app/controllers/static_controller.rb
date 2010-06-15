@@ -1,5 +1,6 @@
 # controller for serving static files
 class StaticController < ApplicationController
+  layout "static"
 
   def show
     path = params[:path]
