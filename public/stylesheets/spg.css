@@ -1,1 +1,5 @@
-body {font-family:Georgia,Arial,Helvetica,sans-serif; font-size:11px;}
+body {font-family:Georgia,Arial,Helvetica,sans-serif; font-size:11px; background-color: #dddddd}
+.main_content {background-color: #ffffff}
+.header .logo { padding: 1em }
+.footer { padding-top: 1em}
+.footer a { margin: 1em 1em 1em 1em }
