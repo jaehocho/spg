@@ -2,6 +2,12 @@
 class StaticController < ApplicationController
   layout "static"
 
+  def index
+    respond_to do |format|
+      format.html { render :layout => "application" }
+    end
+  end
+
   def show
     path = params[:path]
 

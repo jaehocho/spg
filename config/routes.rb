@@ -42,5 +42,6 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 
+  map.connect '', :controller => 'static', :action => 'index'
   map.connect '*path', :controller => 'static', :action => 'show'
 end
