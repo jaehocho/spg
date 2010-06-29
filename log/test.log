@@ -1,0 +1,11 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mContact Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'spg_test.contacts' doesn't exist: SHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mContact Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mContact Create (0.0ms)[0m   [0;1mINSERT INTO `contacts` (`message`, `updated_at`, `addr_street`, `phone`, `addr_city`, `addr_state`, `first_name`, `addr_postal_code`, `last_name`, `email`, `created_at`) VALUES('value for message', '2010-06-29 20:37:52', 'value for addr_street', 'value for phone', 'value for addr_city', 'value for addr_state', 'value for first_name', 'value for addr_postal_code', 'value for last_name', 'yo@gmail.com', '2010-06-29 20:37:52')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m

@@ -10,3 +10,6 @@ body {font-family:Georgia,Arial,Helvetica,sans-serif; font-size:12px; background
 .left_nav ul li { padding: .3em 0 .3em 0 }
 
 .intro_cont { height: 12em; }
+
+.align_right { text-align: right }
+.error { line-height: 1.5}

@@ -1,0 +1,57 @@
+<h1>Contact Us</h1>
+
+<div class="span-10 append-1">
+  <p>
+    We welcome the opportunity to discuss how the innovative management skills of St. Paul Group can maximize
+    the value your investment opportunity.
+  </p>
+
+  <h5>Mailing Address</h5>
+  <p>
+    PO BOX  31956<br/>
+    San Francisco, CA, 94131<br/>
+    Tel. 888.762.1155<br/>
+    Fax. 888.762.1155<br/>
+
+  <h5>Email</h5>
+  info@stpaulgroup.net<br/>
+</div>
+
+<div class="span-10 last">
+
+<% form_for(@contact, :html=>{:class=>"inline"}) do |f| %>
+  <%= f.error_messages(:class=>"error") %>
+
+  <div class="clearfix">
+    <%= f.label :first_name, "First Name*", :class=>"span-3 align_right"%>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="clearfix">
+    <%= f.label :last_name, "Last Name*", :class=>"span-3 align_right"%>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="clearfix">
+    <%= f.label :phone, "Phone Number*", :class=>"span-3 align_right"%>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="clearfix">
+    <%= f.label :email, "Email Address*", :class=>"span-3 align_right"%>
+    <%= f.text_field :email %>
+  </div>
+  <div class="clearfix">
+    <%= f.label :addr_city, "City", :class=>"span-3 align_right"%>
+    <%= f.text_field :addr_city %>
+  </div>
+  <div class="clearfix">
+    <%= f.label :addr_state, "State", :class=>"span-3 align_right"%>
+    <%= f.text_field :addr_state %>
+  </div>
+  <div class="clearfix">
+    <div class="span-3"><%= f.label :message, "Message", :class=>"span-3 align_right" %></div>
+    <div class="span-7 last"><%= f.text_area :message, :rows=>5 %></div>
+  </div>
+  <div>
+    <a href="" onclick="javascript:$(this).closest('form').submit(); return false;" class="button">Send</a>
+  </div>
+<% end %>
+</div>
