@@ -9,5 +9,4 @@ body {font-family:Georgia,Arial,Helvetica,sans-serif; font-size:12px; background
 .left_nav ul { padding: 0; list-style: none; }
 .left_nav ul li { padding: .3em 0 .3em 0 }
 
-.intro_cont { height: 20em; background: yellow } 
-.index_intro { height: 20em; background: yellow }
+.intro_cont { height: 12em; }
