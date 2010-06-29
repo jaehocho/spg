@@ -1,0 +1,111 @@
+<div>
+  <% ################################################################ %>
+
+  <div class="intro_cont span-15">
+    <div class="intro">
+      <div class="span-4">&nbsp;</div>
+      <div class="span-11 last">This is great</div>
+    </div>
+    <div class="intro hide">
+      <div class="span-4">&nbsp;</div>
+      <div class="span-11 last">
+        <h3>Why Invest in Manufactured Housing Communities?</h3>
+        <p>
+          There are several factors that make investing in manufactured housing
+          communities an attractive proposition:
+        </p>
+        <p><a href="">Read More</a></p>
+      </div>
+    </div>
+    <div class="intro hide">
+      <div class="span-4">&nbsp;</div>
+      <div class="span-11 last">
+        <h3>2. SPG Investment Process</h3>
+        <p>
+          We use an investment process that has proven successful with each of our manufactured
+          community investments. That process is replicated over and over to achieve maximum efficiency,
+          outstanding management, and higher-than-average returns.
+        </p>
+        <p><a href="">Read More</a></p>
+      </div>
+    </div>
+    <div class="intro hide">
+      <div class="span-4">&nbsp;</div>
+      <div class="span-11 last">
+        <h3>3. SPG Patnership</h3>
+        <p>
+          7% for each 100k investment
+          7% simple interest on the investment
+          7% of cash flow
+          Exit Strategy - return initial investment through re-finance in 4 years
+        </p>
+        <p><a href="">Read More</a></p>
+      </div>
+    </div>
+    <div class="intro hide">
+      <div class="span-4">&nbsp;</div>
+      <div class="span-11 last">
+        <h3>Investment Example - Milwakuee</h3>
+        <p>
+          1.6M
+          132 Space Park in Milwaukee, WI
+          Strong, diverse economy
+          Close to airport, shopping areas
+          Within city limit
+          Poorly Managed by the Owner
+          Below-market rent          
+        </p>
+        <p><a href="">Read More</a></p>        
+      </div>
+    </div>
+  </div>
+
+  <div class="intro_control">
+    <a class="intro_link" intro_index="0" href="">0</a>
+    <a class="intro_link" intro_index="1" href="">1</a>
+    <a class="intro_link" intro_index="2" href="">2</a>
+    <a class="intro_link" intro_index="3" href="">3</a>
+    <a class="intro_link" intro_index="4" href="">4</a>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+
+  function slide_intros() {
+    if (!is_sliding) return;
+    var cur = intro_i % intros.size();
+    var next = (intro_i + 1) % intros.size();
+    cur_intro = $(intros[cur]);
+    next_intro = $(intros[next]);
+    cur_intro.fadeOut("fast", function() { next_intro.fadeIn();});
+    intro_i++;
+    setTimeout(slide_intros, 1000);
+  }
+  
+  function select_intro(e) {
+    e.preventDefault();
+    is_sliding = false;
+    var next = $(e.target).attr('intro_index');
+    
+    cur_intro = $(intros[intro_i]);
+    next_intro = $(intros[next]);
+    cur_intro.fadeOut("fast", function() { next_intro.fadeIn();});
+    intro_i = next;
+  }
+
+  $(".intro_link").click(select_intro);
+
+  var intros = $(".intro");
+  var intro_i = 0;
+  var cur_intro, next_intro;
+  var is_sliding = true;
+
+  if (intros.size() > 1) {
+    setTimeout(slide_intros, 1000);
+  }
+
+
+
+
+</script>

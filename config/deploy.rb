@@ -21,7 +21,7 @@ set :use_sudo, false
 
 set :branch, 'master'
 set :user, 'root'
-set :domain, '174.143.240.56'
+set :domain, '184.106.197.203'
 set :deploy_to, "/spg"
 
 # distribute your applications across servers (the instructions below put them

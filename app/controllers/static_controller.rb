@@ -4,7 +4,7 @@ class StaticController < ApplicationController
 
   def index
     respond_to do |format|
-      format.html { render :layout => "application" }
+      format.html { render }
     end
   end
 

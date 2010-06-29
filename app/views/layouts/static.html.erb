@@ -8,13 +8,19 @@
   <div class="main_content clearfix">
     <%= render :partial => "/layouts/header"%>
 
-    <div class="span-7 append-1 left_nav">
-      <hr/>
-        <%= render :partial=> File.dirname(@file) + "/left_nav"%>
-      <hr/>
-      Contact Us
+    <div class="span-5 append-1 left_nav">
+      <% if @file != "/static/index.html.erb" %>
+        <hr/>
+          <%= render :partial=> File.dirname(@file) + "/left_nav"%>
+        <hr/>
+      <% end %>
+      <ul>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">News and Events</a></li>
+        <li><a href="">Download Brochure</a></li>
+      </ul>
     </div>
-    <div class="span-15 last">
+    <div class="span-17 last">
       <h1><%= @page_title%></h1>
       <p>
         <%= yield %>
