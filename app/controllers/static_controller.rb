@@ -1,6 +1,6 @@
 # controller for serving static files
 class StaticController < ApplicationController
-  layout "static"
+  layout "layout_1"
 
   def index
     respond_to do |format|

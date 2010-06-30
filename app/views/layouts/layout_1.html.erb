@@ -9,9 +9,9 @@
     <%= render :partial => "/layouts/header"%>
 
     <div class="span-5 append-1 left_nav">
-      <% if @file != "/static/index.html.erb" %>
+      <% if @left_nav %>
         <hr/>
-          <%= render :partial=> File.dirname(@file) + "/left_nav"%>
+        <%= render :partial => @left_nav %>
         <hr/>
       <% end %>
       <ul>
